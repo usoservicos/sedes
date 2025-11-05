@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SwapSedes - Supabase Demo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div>
+      <div class="card" id="authCard">
+        <h2>Entrar / Cadastrar</h2>
+        <div id="authForms">
+          <div id="signupForm">
+            <input id="su_email" placeholder="Email" />
+            <input id="su_password" placeholder="Senha" type="password" />
+            <button id="btnSignup">Cadastrar</button>
+            <hr/>
+          </div>
+          <div id="signinForm">
+            <input id="in_email" placeholder="Email" />
+            <input id="in_password" placeholder="Senha" type="password" />
+            <button id="btnSignin">Entrar</button>
+            <button id="btnSignout" style="display:none">Sair</button>
+          </div>
+        </div>
+
+        <div id="profileEditor" style="margin-top:12px;display:none">
+          <h3>Meu Perfil</h3>
+          <input id="name" placeholder="Nome"/>
+          <select id="current_sede">
+            <option>Sede 1</option>
+            <option>Sede 2</option>
+            <option>Sede 3</option>
+            <option>Sede 4</option>
+          </select>
+          <select id="desired_sede">
+            <option>Sede 1</option>
+            <option>Sede 2</option>
+            <option>Sede 3</option>
+            <option>Sede 4</option>
+          </select>
+          <input id="avatar" placeholder="URL avatar (opcional)"/>
+          <button id="saveProfile">Salvar perfil</button>
+        </div>
+
+        <div id="status" class="small" style="margin-top:12px">Não autenticado</div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Deck</h3>
+        <div class="deck" id="deck">Faça login para ver o deck</div>
+        <div class="actions">
+          <button id="btnNope">✖</button>
+          <button id="btnLike">♥</button>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>Matches</h3>
+        <div id="matchesList" style="display:flex;flex-direction:column;gap:8px;max-height:300px;overflow:auto"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Chat</h3>
+        <div id="chatArea" style="display:none;flex-direction:column;height:320px">
+          <div id="messages" style="flex:1;overflow:auto;max-height:240px;margin-bottom:8px"></div>
+          <input id="chatInput" placeholder="Mensagem..."/>
+          <button id="sendMsg">Enviar</button>
+        </div>
+        <div id="chatPlaceholder" class="small">Abra um match para conversar</div>
+      </div>
+    </aside>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>

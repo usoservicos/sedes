@@ -1,0 +1,11 @@
+  body{font-family:Inter,system-ui; background:#071428;color:#eaf2ff;margin:0;display:flex;min-height:100vh;align-items:flex-start;justify-content:center;padding:18px}
+  .wrap{max-width:980px;width:100%;display:grid;grid-template-columns:1fr 320px;gap:16px}
+  .card{background:#061625;padding:16px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+  .deck{height:640px;display:flex;align-items:center;justify-content:center;position:relative}
+  .profile-card{width:340px;height:480px;border-radius:14px;overflow:hidden;background:#082231;position:absolute;display:flex;flex-direction:column}
+  .profile-card img{width:100%;height:56%;object-fit:cover}
+  .profile-body{padding:12px;flex:1;display:flex;flex-direction:column;justify-content:space-between}
+  .actions{display:flex;gap:8px;justify-content:center;margin-top:8px}
+  button{cursor:pointer}
+  .small{color:#9fb0c6;font-size:13px}
+  input,select{width:100%;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
